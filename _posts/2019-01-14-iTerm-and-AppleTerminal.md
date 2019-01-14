@@ -1,7 +1,7 @@
 ---
 title: A Tip to use both Apple Terminal and iTerm
 date: 2019-01-14 14:24:28 +0900
-tags: iTerm, zsh, AppleTerminal, bash
+tags: [iTerm, zsh, AppleTerminal, bash]
 ---
 
 I set up iTerm and zsh last week on my Mac and I was totally satisfied with it except for one thing.<br>
