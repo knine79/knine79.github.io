@@ -1,16 +1,6 @@
 ---
-layout: article
 title: A Tip to use both Apple Terminal and iTerm
-tag: iTerm, zsh, AppleTerminal, bash
-mode: immersive
-header:
-  theme: dark
-article_header:
-  type: overlay
-  theme: dark
-  background_color: '#203028'
-  background_image:
-    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+categories: Tips
 ---
 
 I set up iTerm and zsh last week on my Mac and I was totally satisfied with it except for one thing.<br>
