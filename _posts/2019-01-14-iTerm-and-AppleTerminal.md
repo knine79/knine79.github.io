@@ -9,7 +9,8 @@ I set up iTerm and zsh last week on my Mac and I was totally satisfied with it e
 
 # Problem
 That is a slightly ugly color on Apple Terminal against iTerm.<br>
-Because Apple Terminal supports only 256 colors. So I wanted to use bash on Apple Terminal.<p>
+Because Apple Terminal supports only 256 colors. So I wanted to use bash on Apple Terminal.<br>
+<img src=/_posts/images/compare-color.png>
 ![](/_posts/images/compare-color.png)
 
 # How to Solve
