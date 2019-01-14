@@ -1,5 +1,6 @@
 ---
 title: A Tip to use both Apple Terminal and iTerm
+date: 2019-01-14 05:24:28 +0900
 categories: Tips
 ---
 
