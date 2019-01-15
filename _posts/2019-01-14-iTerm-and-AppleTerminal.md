@@ -3,12 +3,12 @@ title: A Tip to use both Apple Terminal and iTerm
 date: 2019-01-14 14:24:28 +0900
 ---
 
-I set up iTerm and zsh last week on my Mac and I was totally satisfied with it except for one thing.<br>
+I set up iTerm and zsh last week on my Mac and I was totally satisfied with it except for one thing.
 (Set-up referenced [https://beomi.github.io/2017/07/07/Beautify-ZSH/](https://beomi.github.io/2017/07/07/Beautify-ZSH/), [https://wayhome25.github.io/etc/2017/03/12/zsh-alias/](https://wayhome25.github.io/etc/2017/03/12/zsh-alias/))
 
 # Problem
-That is a slightly ugly color on Apple Terminal against iTerm.<br>
-Because Apple Terminal supports only 256 colors. So I wanted to use bash on Apple Terminal.<p>
+That is a slightly ugly color on Apple Terminal against iTerm.
+Because Apple Terminal supports only 256 colors. So I wanted to use bash on Apple Terminal.
 ![](/assets/compare-color.png)
 
 # How to Solve
@@ -18,19 +18,19 @@ if [ $TERM_PROGRAM != "iTerm.app" ]; then
   bash
 fi
 ```
-It means 'Excute bash shell when terminal is not iTerm'.
+It means 'Execute bash shell when terminal is not iTerm'.
 
-Ok, pretty terminal is back.:heart_eyes:<br>
+Ok, pretty terminal is back.:heart_eyes:
 ![](/assets/pretty-terminal.png)
 
-But this solution causes a troublesome problem.<br>
-It causes alert like below when closing window.:disappointed_relieved:<br>
+But this solution causes a troublesome problem.
+It causes alert like below when closing window.:disappointed_relieved:
 ![](/assets/alert-on-close.png)
 It's because of bash we make execute when launching terminal window.
 
-So I tryed to find some proper property on Apple Terminal preferences.<br>
-And fortunatedly found it.:kissing_heart:<br>
-I can configure to `Ask before closing`, `Only if there are processes other than the login shell and:` **bash** like following:<br>
+So I tried to find some proper property on Apple Terminal preferences.
+And fortunately found it.:kissing_heart:
+I can configure to `Ask before closing`, `Only if there are processes other than the login shell and:` **bash** like following:
 ![](/assets/configure.png)
 
 # Note
