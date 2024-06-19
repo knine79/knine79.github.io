@@ -7,7 +7,7 @@
     <script type="text/javascript" charset="UTF-8">
         function callNative() {
             try {
-                webkit.messageHandlers.interface.postMessage('{"action":"deeplink", "actionArgs": {"url": "wanted://company/79"}}');
+                webkit.messageHandlers.interface.postMessage({"action":"deeplink", "actionArgs": {"url": "wanted://company/79"}});
             } catch (err) {
                 alert(err);
             }
