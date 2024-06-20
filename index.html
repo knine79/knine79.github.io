@@ -1,23 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="/public/js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" charset="UTF-8">
-        function callNative() {
-            try {
-                webkit.messageHandlers.interface.postMessage({"action":"deeplink", "actionArgs": {"url": "wanted://company/79"}});
-            } catch (err) {
-                alert(err);
-            }
-        }
-    </script>
-</head>
-
-<body>
+  <body>
     <h1>IOS 용 페이지</h1>
-    <br><input type="button" onclick="callNative()" value="네이티브 함수 호출" />
-</body>
+    <br />
+    <button
+      type="button"
+      onclick="callNative()"
+    >
+    네이티브 함수 호출
+    </button>
+    <script type="text/javascript" charset="UTF-8">
+      function callNative() {
+        try {
+            this._window.webkit.messageHandlers.interface.postMessage(message);
 
+          window.webkit.messageHandlers.interface.postMessage({
+            callbackId: '1',
+            action: "deeplink",
+            actionArgs: { url: "wanted://company/79" },
+          });
+        } catch (err) {
+          alert(err);
+        }
+      }
+    </script>
+  </body>
 </html>
