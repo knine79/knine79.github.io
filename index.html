@@ -17,13 +17,11 @@
     <script type="text/javascript" charset="UTF-8">
       function callNative() {
         try {
-            this._window.webkit.messageHandlers.interface.postMessage(message);
-
-          window.webkit.messageHandlers.interface.postMessage({
-            callbackId: '1',
-            action: "deeplink",
-            actionArgs: { url: "wanted://company/79" },
-          });
+            window.webkit.messageHandlers.interface.postMessage({
+                callbackId: '1',
+                action: "deeplink",
+                actionArgs: { url: "wanted://company/79" },
+            });
         } catch (err) {
           alert(err);
         }
